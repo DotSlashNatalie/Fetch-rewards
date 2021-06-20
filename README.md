@@ -32,12 +32,21 @@ We must be able to:
     - If you are on Windows that you have Python/pip in the %Path% environment variable
   - Linux
     - Should be installed by default on most distros
+    - Debian
+      - May need to install an extra package: apt-get install python3-venv
 - You have an SSH client that can be ran via the command ssh
   - Windows
     - https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
     - https://mobaxterm.mobatek.net/
   - Linux
     - Should be installed by default on most distros
+- You have git installed (to get the repo)
+
+## Pre-setup
+
+- Debian 10 container
+  - apt install git python3-venv
+  - 
 
 ## Setup
 
@@ -60,6 +69,9 @@ We must be able to:
 ## Running
 
 - python3 deploy.py
+- chmod 400 fetch-root.pem
+- chmod 400 user1.pem
+- chmod 400 user2.pem
 
 After running the script you should see some output similar to:
 

@@ -3,6 +3,7 @@ import boto3
 import logging
 from Crypto.PublicKey import RSA
 import urllib.request
+import os
 
 logging.basicConfig(filename='%s.log' % ("deploy"), filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
@@ -50,6 +51,10 @@ def keygen():
                 key = RSA.generate(1024)
                 with open("user%s.pem" % str(i+1), "wb") as f:
                     f.write(key.exportKey('PEM'))
+                try:
+                    os.chmod("user%s.pem" % str(i+1), 0o400)
+                except Exception as e:
+                    pass
                 config_base["server"]["users"][i]["ssh_key"] = key.public_key().exportKey('OpenSSH').decode("utf-8")
     with open("config.yaml", "w") as f:
         f.write(yaml.dump(config_base))
