@@ -41,6 +41,11 @@ We must be able to:
   - Linux
     - Should be installed by default on most distros
 - You have git installed (to get the repo)
+- You have an AWS account setup. To get your keys Login to your AWS account
+  - Click on your username in the upper right
+  - Click on My security credentials
+  - Click on "Access keys"
+  - Click on "Create New Access Key"
 
 ## Pre-setup
 
