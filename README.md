@@ -46,7 +46,6 @@ We must be able to:
 
 - Debian 10 container
   - apt install git python3-venv
-  - 
 
 ## Setup
 
