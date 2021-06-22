@@ -4,6 +4,12 @@
 
 Natalie Adams
 
+## To potential employers or fans
+
+I wrote this in about 24 hours with no prior knowledge of AWS API. So do not consider it to be something I would make/consider as production ready.
+
+I am keeping it up for posterity purposes. If this example sparked interest in my abilities then please feel free to contact me.
+
 ## Need to do
 
 Develop an automation program that takes a YAML configuration file as input and deploys a Linux AWS EC2 instance with two volumes and two users.
